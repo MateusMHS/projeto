@@ -1,0 +1,498 @@
+* {
+    margin: 0;
+    /* Remove margens padrão de todos os elementos */
+    padding: 0;
+    /* Remove preenchimentos padrão de todos os elementos */
+}
+
+body {
+    font-family: "Fira Sans", sans-serif;
+    /* Define a fonte da página */
+    font-weight: 700;
+    /* Define o peso da fonte como negrito */
+    font-style: normal;
+    /* Define o estilo da fonte como normal */
+    background-color: rgb(253, 253, 200);
+}
+
+#menu {
+    list-style-type: none;
+    /* Remove marcadores da lista */
+    display: flex;
+    /* Utiliza flexbox para o layout */
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    align-items: center;
+    /* Centraliza verticalmente */
+    padding: 3vh;
+    /* Adiciona preenchimento vertical */
+    height: 10vh;
+    /* Define a altura do menu para centralizar verticalmente */
+}   
+
+.elements-menu {
+    margin: 10px;
+    /* Define margem para cada item do menu */
+    position: static;
+    /* Se posiciona de acordo com o fluxo da página */
+}
+
+.btns-menu {
+    text-decoration: none;
+    /* Remove sublinhado dos links */
+    color: rgb(253, 253, 253);
+    /* Define a cor do texto */
+    font-size: 2.5vh;
+    /* Define o tamanho da fonte */
+}
+
+.btns-menu:hover {
+    transition: 0.5s;
+    /* Transição suave ao passar o mouse */
+    background-color: rgb(73, 73, 73);
+    /* Muda a cor de fundo ao passar o mouse */
+}
+
+.btns-menu:active {
+    transition: 0.5s;
+    /* Transição suave ao clicar */
+    background-color: rgb(0, 0, 0);
+    /* Muda a cor de fundo ao clicar */
+}
+
+#logoMec {
+    background-color: red;
+    border-radius: 30px;
+    width: 20vw;
+    height: 20vh;
+    margin-bottom: 3vh;
+}
+.subtitulo {
+    font-size: 15px;
+    /* Define o tamanho da fonte para subtítulos */
+}
+
+#titulo-pagamento {
+    color: white;
+    /* Define a cor do texto */
+    padding: 2.5vh;
+    /* Adiciona preenchimento vertical */
+    font-size: 3vh;
+    /* Define o tamanho da fonte */
+}
+
+#titulo-cliente {
+    color: white;
+    /* Define a cor do texto */
+}
+
+header {
+    background-color: black;
+    /* Define a cor de fundo do cabeçalho */
+    text-align: center;
+    /* Centraliza horizontalmente o conteúdo do cabeçalho */
+    padding: 5px;
+    /* Adiciona preenchimento ao cabeçalho */
+}
+
+#formulario-bebidas img {
+    width: 230px;
+    /* Define a largura das imagens no formulário de bebidas */
+    height: 120px;
+    /* Define a altura das imagens no formulário de bebidas */
+}
+
+#formulario-sobremesas img {
+    width: 230px;
+    /* Define a largura das imagens no formulário de sobremesas */
+    height: 220px;
+    /* Define a altura das imagens no formulário de sobremesas */
+}
+
+#formulario-pagamento img {
+    width: 250px;
+    /* Define a largura das imagens no formulário de pagamento */
+    height: 220px;
+    /* Define a altura das imagens no formulário de pagamento */
+}
+
+#btn-iniciarPedido {
+    border-color: rgb(0, 0, 0);
+    /* Define a cor da borda do botão */
+    border-width: 2px;
+    /* Define a largura da borda do botão */
+    border-radius: 4px;
+    /* Define o raio da borda (cantinhos arredondados) */
+    text-align: center;
+    /* Centraliza o texto dentro do botão */
+    text-decoration: none;
+    /* Remove sublinhado do texto */
+    background: none;
+    /* Remove fundo do botão */
+    font-size: 20px;
+    /* Define o tamanho da fonte */
+    color: rgb(0, 0, 0);
+    /* Define a cor do texto */
+    padding: 1.5vh;
+    /* Adiciona preenchimento vertical */
+    cursor: pointer;
+    /* Altera o cursor ao passar sobre o botão */
+}
+
+#btn-iniciarPedido:hover {
+    transition: 0.5s;
+    /* Transição suave ao passar o mouse */
+    background-color: rgb(235, 235, 147);
+    /* Muda a cor de fundo ao passar o mouse */
+}
+
+#btn-iniciarPedido:active {
+    transition: 0.5s;
+    /* Transição suave ao clicar */
+    background-color: rgb(163, 158, 127);
+    /* Muda a cor de fundo ao clicar */
+}
+
+input[type="checkbox"] {
+    width: 3vh;
+    /* Define a largura dos checkboxes */
+    height: 3vh;
+    /* Define a altura dos checkboxes */
+}
+
+input[type="text"] {
+    width: 50%;
+    /* Define a largura dos campos de texto */
+    height: 4vh;
+    /* Define a altura dos campos de texto */
+}
+
+#btn-voltar {
+    border-color: black;
+    /* Define a cor da borda do botão "voltar" */
+    border-width: 3px;
+    /* Define a largura da borda do botão "voltar" */
+    border-radius: 4px;
+    /* Define o raio da borda (cantinhos arredondados) */
+    text-align: center;
+    /* Centraliza o texto dentro do botão */
+    text-decoration: none;
+    /* Remove sublinhado do texto */
+    background: none;
+    /* Remove fundo do botão */
+    font-size: 16px;
+    /* Define o tamanho da fonte */
+    color: rgb(0, 0, 0);
+    /* Define a cor do texto */
+    float: left;
+    /* Alinha o botão à esquerda */
+    margin-left: 70px;
+    /* Adiciona margem à esquerda */
+    padding: 1.3vh;
+    /* Adiciona preenchimento vertical */
+    cursor: pointer;
+    /* Altera o cursor ao passar sobre o botão */
+}
+
+#btn-voltar:hover {
+    transition: 0.5s;
+    /* Transição suave ao passar o mouse */
+    background-color: rgb(235, 235, 147);
+    /* Muda a cor de fundo ao passar o mouse */
+}
+
+#btn-voltar:active {
+    transition: 0.5s;
+    /* Transição suave ao clicar */
+    background-color: rgb(163, 158, 127);
+    /* Muda a cor de fundo ao clicar */
+}
+
+#btn-proximo {
+    border-color: black;
+    /* Define a cor da borda do botão "próximo" */
+    border-width: 3px;
+    /* Define a largura da borda do botão "próximo" */
+    border-radius: 4px;
+    /* Define o raio da borda (cantinhos arredondados) */
+    text-align: center;
+    /* Centraliza o texto dentro do botão */
+    text-decoration: none;
+    /* Remove sublinhado do texto */
+    background: none;
+    /* Remove fundo do botão */
+    font-size: 16px;
+    /* Define o tamanho da fonte */
+    color: rgb(0, 0, 0);
+    /* Define a cor do texto */
+    float: right;
+    /* Alinha o botão à direita */
+    margin-right: 70px;
+    /* Adiciona margem à direita */
+    padding: 1.3vh;
+    /* Adiciona preenchimento vertical */
+    cursor: pointer;
+    /* Altera o cursor ao passar sobre o botão */
+}
+
+#btn-proximo:hover {
+    transition: 0.5s;
+    /* Transição suave ao passar o mouse */
+    background-color: rgb(235, 235, 147);
+    /* Muda a cor de fundo ao passar o mouse */
+}
+
+#btn-proximo:active {
+    transition: 0.5s;
+    /* Transição suave ao clicar */
+    background-color: rgb(163, 158, 127);
+    /* Muda a cor de fundo ao clicar */
+}
+#section-inicio {
+    text-align: center;
+    /* Centraliza horizontalmente */
+    padding: 150px 0;
+    /* Centraliza verticalmente */
+    position: static;
+    /* Se posiciona de acordo com o fluxo da página */
+}
+
+#titulo-combos {
+    display: flex;
+    /* Utiliza flexbox para o layout */
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    margin-top: 5vh;
+    /* Adiciona margem superior */
+}
+
+#titulo-lanches {
+    display: flex;
+    /* Utiliza flexbox para o layout */
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    margin-top: 5vh;
+    /* Adiciona margem superior */
+}
+
+#titulo-bebidas {
+    display: flex;
+    /* Utiliza flexbox para o layout */
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    margin-top: 5vh;
+    /* Adiciona margem superior */
+}
+
+#section-combos {
+    display: flex;
+    /* Utiliza flexbox para o layout */
+    text-align: center;
+    /* Centraliza horizontalmente */
+    justify-content: center;
+    /* Centraliza horizontalmente os itens */
+    align-items: center;
+    /* Centraliza verticalmente os itens dentro da linha */
+    height: 50vh;
+    /* Define a altura da seção */
+}
+
+#section-lanches {
+    display: flex;
+    /* Utiliza flexbox para o layout */
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    text-align: center;
+    /* Centraliza horizontalmente */
+    align-items: center;
+    /* Centraliza verticalmente os itens dentro da linha */
+    height: 50vh;
+    /* Define a altura da seção */
+}
+
+#section-bebidas {
+    display: flex;
+    /* Utiliza flexbox para o layout */
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    text-align: center;
+    /* Centraliza horizontalmente */
+    align-items: center;
+    /* Centraliza verticalmente os itens dentro da linha */
+    height: 50vh;
+    /* Define a altura da seção */
+}
+
+#section-lacnhes {
+    /* Observação: 'lacnhes' parece ser um erro de digitação, deveria ser 'lanches' */
+    display: flex;
+    /* Utiliza flexbox para o layout */
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    text-align: center;
+    /* Centraliza horizontalmente */
+    align-items: center;
+    /* Centraliza verticalmente os itens dentro da linha */
+    height: 50vh;
+    /* Define a altura da seção */
+}
+
+#pagamento {
+    display: flex;
+    /* Utiliza flexbox para o layout */
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    text-align: center;
+    /* Centraliza horizontalmente */
+    align-items: center;
+    /* Centraliza verticalmente os itens dentro da linha */
+    height: 50vh;
+    /* Define a altura da seção */
+}
+
+#cliente-nav {
+    padding: 2.5vh;
+    /* Adiciona preenchimento vertical */
+    font-size: 1.5vh;
+    /* Define o tamanho da fonte */
+}
+
+img {
+    padding: 5vh;
+    /* Adiciona preenchimento ao redor das imagens */
+    max-width: 13vw;
+    /* Define a largura máxima das imagens */
+    max-height: 13vh;
+    /* Define a altura máxima das imagens */
+}
+
+#formulario-combos {
+    display: flex;
+    /* Utiliza flexbox para o layout */
+    flex-wrap: wrap;
+    /* Quebra para linha de baixo quando diminui a tela */
+}
+
+#formulario-lanches {
+    display: flex;
+    /* Utiliza flexbox para o layout */
+    flex-wrap: wrap;
+    /* Quebra para linha de baixo quando diminui a tela */
+}
+
+#formulario-bebidas {
+    display: flex;
+    /* Utiliza flexbox para o layout */
+    flex-wrap: wrap;
+    /* Quebra para linha de baixo quando diminui a tela */
+}
+
+#formulario-sobremesas {
+    display: flex;
+    /* Utiliza flexbox para o layout */
+    flex-wrap: wrap;
+    /* Quebra para linha de baixo quando diminui a tela */
+}
+
+#formulario-pagamento {
+    display: flex;
+    /* Utiliza flexbox para o layout */
+    flex-wrap: wrap;
+    /* Quebra para linha de baixo quando diminui a tela */
+    text-align: center;
+    /* Centraliza horizontalmente */
+    justify-content: center;
+    /* Centraliza os itens horizontalmente */
+    align-items: center;
+    /* Centraliza os itens verticalmente dentro da linha */
+}
+
+#cliente-nome,
+#cliente-cpf {
+    border-color: black;
+    /* Define a cor da borda dos campos de cliente */
+    border-width: 1px;
+    /* Define a largura da borda dos campos de cliente */
+    border-radius: 12px;
+    /* Define o raio da borda (cantinhos arredondados) */
+    text-align: center;
+    /* Centraliza o texto dentro dos campos */
+    text-decoration: none;
+    /* Remove sublinhado do texto */
+    background: none;
+    /* Remove fundo dos campos */
+    font-size: 18px;
+    /* Define o tamanho da fonte */
+    color: rgb(0, 0, 0);
+    /* Define a cor do texto */
+    background-color: white;
+}
+
+#cliente {
+    padding: 150px 0;
+    /* Centraliza verticalmente */
+    text-align: center;
+    /* Centraliza horizontalmente */
+}
+
+#pedido-finalizado {
+    padding: 150px 0;
+    /* Centraliza verticalmente */
+    text-align: center;
+    /* Centraliza horizontalmente */
+}
+
+.btn-finalizado {
+    border-color: black;
+    /* Define a cor da borda do botão finalizado */
+    border-width: 2px;
+    /* Define a largura da borda do botão finalizado */
+    border-radius: 4px;
+    /* Define o raio da borda (cantinhos arredondados) */
+    text-align: center;
+    /* Centraliza o texto dentro do botão */
+    text-decoration: none;
+    /* Remove sublinhado do texto */
+    background: none;
+    /* Remove fundo do botão */
+    font-size: 16px;
+    /* Define o tamanho da fonte */
+    color: rgb(0, 0, 0);
+    /* Define a cor do texto */
+}
+
+#btn-finalizar:hover {
+    transition: 0.5s;
+    /* Transição suave ao passar o mouse */
+    background-color: rgb(235, 235, 147);
+    /* Muda a cor de fundo ao passar o mouse */
+}
+
+#btn-finalizar:active {
+    transition: 0.5s;
+    /* Transição suave ao clicar */
+    background-color: rgb(163, 158, 127);
+    /* Muda a cor de fundo ao clicar */
+}
+
+#logoMecFim {
+    background-color: red;
+    border-radius: 30px;
+    width: 20vw;
+    height: 20vh;
+    margin-bottom: 3vh;
+}
+
+#img-logoMectopo:hover {
+    transition: 0.5s;
+    /* Transição suave ao passar o mouse */
+    background-color: rgb(235, 235, 147);
+    /* Muda a cor de fundo ao passar o mouse */
+}
+
+#img-logoMectopo-finalizar:active {
+    transition: 0.5s;
+    /* Transição suave ao clicar */
+    background-color: rgb(163, 158, 127);
+    /* Muda a cor de fundo ao clicar */
+}
