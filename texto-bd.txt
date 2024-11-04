@@ -1,0 +1,13 @@
+create table admin (
+	id int PRIMARY KEY AUTO_INCREMENT,
+    username varchar not null,
+    password varchar not null
+);
+
+create table pedidos (
+	codigo int PRIMARY KEY not null,
+	items TEXT,
+	totalPreco DECIMAL (10, 2) not null,
+	formaPagamento varchar,
+    nome varchar(255) not null,
+    cpf varchar(11));
