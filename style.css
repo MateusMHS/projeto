@@ -137,6 +137,7 @@ header {
     /* Adiciona preenchimento vertical */
     cursor: pointer;
     /* Altera o cursor ao passar sobre o botão */
+    margin-bottom:1em;
 }
 
 #btn-iniciarPedido:hover {
@@ -495,4 +496,252 @@ img {
     /* Transição suave ao clicar */
     background-color: rgb(163, 158, 127);
     /* Muda a cor de fundo ao clicar */
+}
+
+#titulo-entrada {
+    text-align: center;
+    margin-top:20vh;
+}
+
+#administrador-title {
+    font-size:2em;
+}
+
+#admin {
+    padding: 150px 0;
+    /* Centraliza verticalmente */
+    text-align: center;
+    /* Centraliza horizontalmente */
+    margin-bottom:0.3em;
+}
+
+#admin-senha, #admin-login {
+    border-color: black;
+    /* Define a cor da borda dos campos de cliente */
+    border-width: 1px;
+    /* Define a largura da borda dos campos de cliente */
+    border-radius: 12px;
+    /* Define o raio da borda (cantinhos arredondados) */
+    text-align: center;
+    /* Centraliza o texto dentro dos campos */
+    text-decoration: none;
+    /* Remove sublinhado do texto */
+    background: none;
+    /* Remove fundo dos campos */
+    font-size: 18px;
+    /* Define o tamanho da fonte */
+    color: rgb(0, 0, 0);
+    /* Define a cor do texto */
+    background-color: white;
+    margin-bottom:0.9em;
+}
+
+#area-admin {
+    text-align: center;
+    margin-top:25em;
+}
+
+#titulo-admin {
+    margin-bottom:1.3em;
+}
+
+#btn-alterar {
+    border-color: rgb(0, 0, 0);
+    /* Define a cor da borda do botão */
+    border-width: 2px;
+    /* Define a largura da borda do botão */
+    border-radius: 4px;
+    /* Define o raio da borda (cantinhos arredondados) */
+    text-align: center;
+    /* Centraliza o texto dentro do botão */
+    text-decoration: none;
+    /* Remove sublinhado do texto */
+    background: none;
+    /* Remove fundo do botão */
+    font-size: 20px;
+    /* Define o tamanho da fonte */
+    color: rgb(0, 0, 0);
+    /* Define a cor do texto */
+    padding: 1.5vh;
+    /* Adiciona preenchimento vertical */
+    cursor: pointer;
+    /* Altera o cursor ao passar sobre o botão */
+    margin-bottom:1em;
+}
+
+#btn-alterar:hover {
+    transition: 0.5s;
+    /* Transição suave ao passar o mouse */
+    background-color: rgb(235, 235, 147);
+    /* Muda a cor de fundo ao passar o mouse */
+}
+
+#btn-alterar:active {
+    transition: 0.5s;
+    /* Transição suave ao clicar */
+    background-color: rgb(163, 158, 127);
+    /* Muda a cor de fundo ao clicar */
+}
+
+#fazer-pedido {
+
+    border-color: rgb(0, 0, 0);
+    /* Define a cor da borda do botão */
+    border-width: 2px;
+    /* Define a largura da borda do botão */
+    border-radius: 4px;
+    /* Define o raio da borda (cantinhos arredondados) */
+    text-align: center;
+    /* Centraliza o texto dentro do botão */
+    text-decoration: none;
+    /* Remove sublinhado do texto */
+    background: none;
+    /* Remove fundo do botão */
+    font-size: 20px;
+    /* Define o tamanho da fonte */
+    color: rgb(0, 0, 0);
+    /* Define a cor do texto */
+    padding: 1.5vh;
+    /* Adiciona preenchimento vertical */
+    cursor: pointer;
+    /* Altera o cursor ao passar sobre o botão */
+    margin-bottom:1em;
+}
+
+#fazer-pedido:hover {
+    transition: 0.5s;
+    /* Transição suave ao passar o mouse */
+    background-color: rgb(235, 235, 147);
+    /* Muda a cor de fundo ao passar o mouse */
+}
+
+#fazer-pedido:active {
+    transition: 0.5s;
+    /* Transição suave ao clicar */
+    background-color: rgb(163, 158, 127);
+    /* Muda a cor de fundo ao clicar */
+}
+
+#footer-btn {
+    text-align: center;
+}
+
+#resumo-pedido {
+    text-align: center;
+    margin-top:5em;
+}
+
+#titulo-pedido {
+    text-align: center;
+    margin-top:10em;
+    margin-bottom:0.4em;
+}
+
+#resumo {
+    text-align: center;
+    font-size:24px;
+
+}
+
+#fazer-pedidoConfirma {
+    border-color: rgb(0, 0, 0);
+    /* Define a cor da borda do botão */
+    border-width: 2px;
+    /* Define a largura da borda do botão */
+    border-radius: 4px;
+    /* Define o raio da borda (cantinhos arredondados) */
+    text-align: center;
+    /* Centraliza o texto dentro do botão */
+    text-decoration: none;
+    /* Remove sublinhado do texto */
+    background: none;
+    /* Remove fundo do botão */
+    font-size: 20px;
+    /* Define o tamanho da fonte */
+    color: rgb(0, 0, 0);
+    /* Define a cor do texto */
+    padding: 1.5vh;
+    /* Adiciona preenchimento vertical */
+    cursor: pointer;
+    /* Altera o cursor ao passar sobre o botão */
+    margin-top:0.5em;
+    margin-left:45.66%;
+}
+
+#fazer-pedidoConfirma:hover {
+    transition: 0.5s;
+    /* Transição suave ao passar o mouse */
+    background-color: rgb(235, 235, 147);
+    /* Muda a cor de fundo ao passar o mouse */
+}
+
+#fazer-pedidoConfirma:active {
+    transition: 0.5s;
+    /* Transição suave ao clicar */
+    background-color: rgb(163, 158, 127);
+    /* Muda a cor de fundo ao clicar */
+}
+
+#fazer-pedidoRecusa {
+    border-color: rgb(0, 0, 0);
+    /* Define a cor da borda do botão */
+    border-width: 2px;
+    /* Define a largura da borda do botão */
+    border-radius: 4px;
+    /* Define o raio da borda (cantinhos arredondados) */
+    text-align: center;
+    /* Centraliza o texto dentro do botão */
+    text-decoration: none;
+    /* Remove sublinhado do texto */
+    background: none;
+    /* Remove fundo do botão */
+    font-size: 20px;
+    /* Define o tamanho da fonte */
+    color: rgb(0, 0, 0);
+    /* Define a cor do texto */
+    padding: 1.5vh;
+    /* Adiciona preenchimento vertical */
+    cursor: pointer;
+    /* Altera o cursor ao passar sobre o botão */
+    margin-top:0.5em;
+    margin-left:47.5%;
+}
+
+#fazer-pedidoRecusa:active {
+    transition: 0.5s;
+    /* Transição suave ao clicar */
+    background-color: rgb(163, 158, 127);
+    /* Muda a cor de fundo ao clicar */
+}
+
+#fazer-pedidoRecusa:hover {
+    transition: 0.5s;
+    /* Transição suave ao passar o mouse */
+    background-color: rgb(235, 235, 147);
+    /* Muda a cor de fundo ao passar o mouse */
+}
+
+#botao-confirmapagamento {
+    border-color: rgb(0, 0, 0);
+    /* Define a cor da borda do botão */
+    border-width: 2px;
+    /* Define a largura da borda do botão */
+    border-radius: 4px;
+    /* Define o raio da borda (cantinhos arredondados) */
+    text-align: center;
+    /* Centraliza o texto dentro do botão */
+    text-decoration: none;
+    /* Remove sublinhado do texto */
+    background: none;
+    /* Remove fundo do botão */
+    font-size: 20px;
+    /* Define o tamanho da fonte */
+    color: rgb(0, 0, 0);
+    /* Define a cor do texto */
+    padding: 1.5vh;
+    /* Adiciona preenchimento vertical */
+    cursor: pointer;
+    /* Altera o cursor ao passar sobre o botão */
+    margin-top:0.5em;
+    margin-left:45.66%;
 }

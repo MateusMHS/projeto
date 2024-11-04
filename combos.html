@@ -1,90 +1,44 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,4
-        00;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;
-        1,800;1,900&display=swap" rel="stylesheet">
-        <title>McDonalds_COMBOS</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>McDonalds_COMBOS</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <ul id="menu">
+            <li><img id="logoMectopo" src="imagem.png" alt="Logo McDonalds" /></li>
+            <li class="elements-menu"><a href="combos.html" tile="pag" class="btns-menu">COMBOS</a></li>
+            <li class="elements-menu"><a href="lanches.html" tile="pag" class="btns-menu">LANCHES</a></li>
+            <li class="elements-menu"><a href="bebidas.html" tile="pag" class="btns-menu">BEBIDAS</a></li>
+            <li class="elements-menu"><a href="sobremesas.html" tile="pag" class="btns-menu">SOBREMESAS</a></li>
+        </ul>
+    </header>
 
-    <body>
-        <header>
-            
-            <ul id="menu">
-                <li>
-                  <img id="logoMectopo" src="imagem.png"
-                    alt="Logo McDonalds" />
-                 </li>
-                <li class="elements-menu">
-                    <a href="combos.html" tile="pag" class="btns-menu" id="btnMenu-combos">COMBOS</a>
-                </li>
-                <li class="elements-menu">
-                    <a href="lanches.html" tile="pag" class="btns-menu" id="btnMenu-lanches">LANCHES</a>
-                </li>
-                <li class="elements-menu">
-                    <a href="bebidas.html" tile="pag" class="btns-menu" id="btnMenu-bebidas">BEBIDAS</a>
-                </li>
-                <li class="elements-menu">
-                    <a href="sobremesas.html" tile="pag" class="btns-menu" id="btnMenu-sobremesas">SOBREMESAS</a>
-                </li>
-            </ul>
-        </header>
+    <h1>Escolha seu combo:</h1>
+    <section id="section-combos">
+        <form id="formulario-combos">
+            <div class="combo-item">
+                <input type="checkbox" id="combo1" name="combo" value="MecCombo1" class="checar" data-preco="17.99">
+                <br>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnCawtfWm9gKAQFjC_gcy2bRJz_mryx0ySXQ&s" alt="imagem combo 1" />
+                <p class="subtitulo">Meczada R$17,99</p>
+            </div>
+            <div class="combo-item">
+                <input type="checkbox" id="combo2" name="combo" value="MecCombo2" class="checar" data-preco="22.99">
+                <br>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_7M6BRC_9E1d2SLnYBTI458Bu8UPrlluBuEQgQHQizs7QR33AOQOiX1I0gkH8Bfvpz_U&usqp=CAU" alt="imagem combo 2"/>
+                <p class="subtitulo">Combo lanchão R$22,99</p>
+            </div>
+        </form>
+    </section>
 
-
-        <h1 id="titulo-combos">Escolha seu combo:</h1>
-        <section id="section-combos"> 
-            <form method="post" action="" id="formulario-combos">
-                <div class="combo-item">
-                    <input type="checkbox" name="img-combo1" class="checar">
-                    <br>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnCawtfWm9gKAQFjC_gcy2bRJz_mryx0ySXQ&s" alt="imagem combo 1" />
-                    <p class = "subtitulo">Meczada R$17,99</p>
-                </div>
-                <div class="combo-item">
-                    <input type="checkbox" name="img-combo2" class="checar">
-                    <br>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_7M6BRC_9E1d2SLnYBTI458Bu8UPrlluBuEQgQHQizs7QR33AOQOiX1I0gkH8Bfvpz_U&usqp=CAU"/>  
-                    <p class = "subtitulo"> Combo lanchão R$45,99</p> 
-                </div>
-
-                <div class="combo-item">
-                    <input type="checkbox" name="img-combo3" class="checar">
-                    <br>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWeVAZr3cSX0EIEUQKNPZ4c3f5_HDViFDPgF71LcWCpNf-zzn6aWNDtDlPzFJo_A7BkUQ&usqp=CAU"/>
-                    <p class = "subtitulo"> Grande méqui R$ 62,99</p>
-                </div>
-
-                <div class="combo-item">
-                    <input type="checkbox" name="img-combo4" class="checar">
-                    <br>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMLKcVjJbFND8oDq3R9VENEOn62_liteIyqA&s"/>
-                    <p class = "subtitulo"> Lanche meczão R$22,99</p>
-                </div>
-
-                <div class="combo-item">
-                    <input type="checkbox" name="img-combo5" class="checar">
-                    <br>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAN4zORL31WNtR6gU3zuIs6VJ7VWwAl8WKLm-FG_lDGaMXJHArojAlK6rZsqZkqP-a-Bw&usqp=CAU"/>
-                    <p class = "subtitulo"> Combo Mec R$33,99</p>
-                </div>
-
-            </form>
-        </section>
-
-        <footer id="footer-btn">
-
-            <a href="index.html" tile="pag" id="">
-                <input id="btn-voltar" type="button" value="VOLTAR">
-            </a>
-
-            <a href="lanches.html" tile="pag" id="">
-                <input id="btn-proximo" type="button" value="PROXÍMO">
-            </a>
-        </footer>
-       
-    </body>
+    <footer id="footer-btn">
+        <a href="index.html" tile="pag"><input id="btn-voltar" type="button" value="VOLTAR"></a>
+        <a href="lanches.html" tile="pag"><input id="btn-proximo" type="button" value="PRÓXIMO"></a>
+        <button type="button" onclick="coletarItens('lanches.html')" id="fazer-pedido">Próximo</button>
+    </footer>
+</body>
 </html>

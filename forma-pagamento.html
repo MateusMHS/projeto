@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Forma de Pagamento</title>
+</head>
+<body>
+    <h1 id="titulo-lanches">Escolha a forma de pagamento</h1>
+    <form id="pagamento">
+        <div>
+            <input type="checkbox" id="credito" name="pagamento" value="credito" class="opcao-pagamento">
+            <br>
+            <img src="Nubank-card.jpg" alt=""><br>
+            <label for="credito">Crédito</label>
+        </div>
+        <div>
+            <input type="checkbox" id="debito" name="pagamento" value="debito" class="opcao-pagamento">
+            <br>
+            <img src="pag-10-tarjeta-credito.jpg" alt=""><br>
+            <label for="debito">Débito</label>
+        </div>
+        <div>
+            <input type="checkbox" id="pix" name="pagamento" value="pix" class="opcao-pagamento">
+            <br>
+            <img src="OIP.jpeg" alt=""><br>
+            <label for="pix">Pix</label>
+        </div>
+    </form>
+    <button type="button" onclick="validarPagamento('finalizado.html')" id="botao-confirmapagamento">Confirmar Pagamento</button>
+
+    <script src="script.js"></script>
+</body>
+</html>

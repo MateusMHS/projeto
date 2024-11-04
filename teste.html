@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Totem McDonald's</title>
+</head>
+
+<body>
+    <header>
+        <ul id="menu">
+            <li>
+                <img id="logoMectopo" src="imagem.png" alt="Logo McDonalds" />
+            </li>
+            <li class="elements-menu">
+                <a href="combos.html" tile="pag" class="btns-menu" id="btnMenu-combos">COMBOS</a>
+            </li>
+            <li class="elements-menu">
+                <a href="lanches.html" tile="pag" class="btns-menu" id="btnMenu-lanches">LANCHES</a>
+            </li>
+            <li class="elements-menu">
+                <a href="bebidas.html" tile="pag" class="btns-menu" id="btnMenu-bebidas">BEBIDAS</a>
+            </li>
+            <li class="elements-menu">
+                <a href="sobremesas.html" tile="pag" class="btns-menu" id="btnMenu-sobremesas">SOBREMESAS</a>
+            </li>
+        </ul>
+    </header>
+
+    <h1 id="titulo-lanches">Escolha seu lanche:</h1>
+    <section id="section-lanches">
+        <form method="post" action="processar_pedido.php" id="formulario-lanches">
+            <div class="lanche-item">
+                <input type="checkbox" name="lanches[]" value="1" id="img-lanche1">
+                <br>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYKh1yHZX3CBG3c99zAE4uW_x8eP1NMv1MPA&s" alt="imagem lanche 1" />
+                <p class="subtitulo"> MecChicken R$12,99</p>
+            </div>
+
+            <div class="lanche-item">
+                <input type="checkbox" name="lanches[]" value="2" id="img-lanche2">
+                <br>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYKh1yHZX3CBG3c99zAE4uW_x8eP1NMv1MPA&s" alt="imagem lanche 2"/>  
+                <p class="subtitulo"> MecHamburguer R$11,99</p> 
+            </div>
+
+            <div class="lanche-item">
+                <input type="checkbox" name="lanches[]" value="3" id="img-lanche3">
+                <br>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYKh1yHZX3CBG3c99zAE4uW_x8eP1NMv1MPA&s" alt="imagem lanche 3"/>
+                <p class="subtitulo"> MecLanche R$15,99</p>
+            </div>
+
+            <div class="lanche-item">
+                <input type="checkbox" name="lanches[]" value="4" id="img-lanche4">
+                <br>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYKh1yHZX3CBG3c99zAE4uW_x8eP1NMv1MPA&s" alt="imagem lanche 4"/>
+                <p class="subtitulo"> MecViking R$10,99</p>
+            </div>
+
+            <div class="lanche-item">
+                <input type="checkbox" name="lanches[]" value="5" id="img-lanche5">
+                <br>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYKh1yHZX3CBG3c99zAE4uW_x8eP1NMv1MPA&s" alt="imagem lanche 5"/>
+                <p class="subtitulo"> MecLove R$9,99</p>
+            </div>
+
+            <input id="btn-finalizar" type="submit" value="FINALIZAR PEDIDO">
+        </form>
+    </section>
+
+    <a href="combos.html" tile="pag">
+        <input id="btn-voltar" type="button" value="VOLTAR">
+    </a>
+
+    <a href="bebidas.html" tile="pag">
+        <input id="btn-proximo" type="button" value="PROXÍMO">
+    </a>
+</body>
+</html>

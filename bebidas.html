@@ -9,6 +9,7 @@
         0,100;0,200;0,300;0,400;0,500;0,600
         ;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,90
         0&display=swap" rel="stylesheet">
+        <script src="script.js" defer></script>
         <title>MecDonalds Bebidas</title>
     </head>
 
@@ -34,52 +35,34 @@
         </header>
 
         <h1 id="titulo-bebidas">Escolha sua bebida:</h1>
-        <section id="section-bebidas">
-            <form method="post" action="" id="formulario-bebidas">
-                <div class="bebidas-item">
-                    <input type="checkbox" name="img-bebida" >
-                    <br>
-                    <img src="https://www.oeduardomoreira.com.br/wp-content/uploads/2020/10/coca-cola-mcdonalds.png" alt="imagem bebida 1" />
-                    <p class = "subtitulo"> Coca Cola R$6,99</p>
-                </div>
+    <section id="section-bebidas"> 
+        <form id="formulario-bebidas">
+            <div class="bebida-item">
+                <input type="checkbox" id="bebida1" name="bebida" value="CocaCola" class="checar">
+                <br>
+                <img src="https://example.com/imagem-bebida1.jpg" alt="imagem bebida 1" />
+                <p class="subtitulo">Refrigerante R$4,99</p>
+            </div>
+            <div class="bebida-item">
+                <input type="checkbox" id="bebida2" name="bebida" value="Fanta" class="checar">
+                <br>
+                <img src="https://example.com/imagem-bebida2.jpg" alt="imagem bebida 2" />
+                <p class="subtitulo">Suco R$3,99</p> 
+            </div>
+            <!-- Adicione mais bebidas conforme necessário -->
+        </form>
+    </section>
 
-                <div class="bebidas-item">
-                    <input type="checkbox" name="img-bebida" >
-                    <br>
-                    <img src="https://www.oeduardomoreira.com.br/wp-content/uploads/2020/10/coca-cola-mcdonalds.png" alt="imagem bebida 2"/> 
-                    <p class = "subtitulo"> Guaravita R$ 2,99</p>  
-                </div>
+    <footer id="footer-btn">
+        <a href="lanches.html" tile="pag">
+            <input id="btn-voltar" type="button" value="VOLTAR">
+        </a>
 
-                <div class="bebidas-item">
-                    <input type="checkbox" name="img-bebida" >
-                    <br>
-                    <img src="https://www.oeduardomoreira.com.br/wp-content/uploads/2020/10/coca-cola-mcdonalds.png" alt="imagem bebida 3"/>
-                    <p class = "subtitulo"> Coca Cola 6,99</p>
-                </div>
-                <div class="bebidas-item">
-                    <input type="checkbox" name="img-bebida" >
-                    <br>
-                    <img src="https://www.oeduardomoreira.com.br/wp-content/uploads/2020/10/coca-cola-mcdonalds.png" alt="imagem bebida 4"/>
-                    <p class = "subtitulo"> Sukita Limão R$5,99</p>
-                </div>
-
-                <div class="bebidas-item">
-                    <input type="checkbox" name="img-bebida" >
-                    <br>
-                    <img src="https://www.oeduardomoreira.com.br/wp-content/uploads/2020/10/coca-cola-mcdonalds.png" alt="imagem bebida 5"/>
-                    <p class = "subtitulo"> Guaraná Jesus R$7,99</p>
-                </div>
-        </section>
-            </form>
-
-            <br>
-
-            <a href="lanches.html" tile="pag" id="">
-                <input id="btn-voltar" type="button" value="VOLTAR">
-            </a>
-
-            <a href="sobremesas.html" tile="pag" id="">
-                <input id="btn-proximo" type="button" value="PROXÍMO">
-            </a>
+        <a href="sobremesas.html" tile="pag">
+            <input id="btn-proximo" type="button" value="PRÓXIMO">
+        </a>
+        
+        <button type="button" onclick="finalizarPedido('sobremesas.html')" id="fazer-pedido">Próximo</button>
+    </footer>
     </body>
 </html>
