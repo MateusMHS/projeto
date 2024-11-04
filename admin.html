@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Painel do Administrador</title>
+</head>
+<body>
+    <h1>Painel do Administrador</h1>
+    <div>
+        <h2>Adicionar Item</h2>
+        <form id="add-item-form">
+            <input type="text" id="item-name" placeholder="Nome do Item" required>
+            <input type="number" id="item-price" placeholder="Preço" required>
+            <input type="text" id="item-category" placeholder="Categoria" required>
+            <button type="submit">Adicionar</button>
+        </form>
+    </div>
+    <div>
+        <h2>Remover Item</h2>
+        <form id="remove-item-form">
+            <input type="number" id="item-id-remove" placeholder="ID do Item" required>
+            <button type="submit">Remover</button>
+        </form>
+    </div>
+    <div>
+        <h2>Atualizar Item</h2>
+        <form

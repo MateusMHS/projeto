@@ -1,58 +1,55 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,40
-        0;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700
-        ;1,800;1,900&display=swap" rel="stylesheet">
-        <script src="script.js" defer></script>
-        <title>MecDonalds Clientes</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <title>MecDonalds Clientes</title>
+</head>
+<body>
+    <header id="cliente-nav">
+        <h1 id="titulo-cliente">Digite seu nome e seu CPF (opcional)</h1>
+    </header>
 
-    <body>
-        <header id = "cliente-nav">
-            <h1 id="titulo-cliente">Digite seu nome e seu CPF (opcional)</h1>
-        </header>
+    <br>
 
+    <section id="cliente">
+        <form id="formulario-cliente">
+            <input id="cliente-nome" type="text" placeholder="Digite seu nome" required>
+            <br>
+            <br>
+            <input id="cliente-cpf" type="text" placeholder="Digite seu CPF">
+            <br>
+            <br>
+            <button type="submit" id="fazer-pedido">Finalizar Pedido</button>
+        </form> 
         <br>
+        <br>
+    </section>
+    
+    <script>
+        // Aguardar o carregamento completo da página
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('formulario-cliente').addEventListener('submit', function(event) {
+                event.preventDefault(); // Impedir o envio do formulário
 
-        <section id="cliente">
-            <form id="formulario-cliente">
-                <input id="cliente-nome" type="text" placeholder="Digite seu nome" required>
-                <br>
-                <br>
-                <input id="cliente-cpf" type="text" placeholder="Digite seu CPF">
-                <br>
-                <br>
-                <button type="submit" id="fazer-pedido">Finalizar Pedido</button>
-            </form> 
-            <br>
-            <br>
-        </section>
-        
-        <script>
-            // Aguardar o carregamento completo da página
-            document.addEventListener('DOMContentLoaded', function() {
-                document.getElementById('formulario-cliente').addEventListener('submit', function(event) {
-                    event.preventDefault(); // Impedir o envio do formulário
+                const nome = document.getElementById('cliente-nome').value;
+                const cpf = document.getElementById('cliente-cpf').value;
 
-                    const nome = document.getElementById('cliente-nome').value; // Correção do ID
-                    const cpf = document.getElementById('cliente-cpf').value; // Correção do ID
+                // Salvar as informações do cliente no localStorage
+                const cliente = {
+                    nome: nome,
+                    cpf: cpf
+                };
+                localStorage.setItem('cliente', JSON.stringify(cliente));
 
-                    // Salvar as informações do cliente no localStorage
-                    const cliente = {
-                        nome: nome,
-                        cpf: cpf
-                    };
-                    localStorage.setItem('cliente', JSON.stringify(cliente));
-
-                    // Redirecionar para a página de pagamento
-                    window.location.href = 'pagamento.html';
-                });
+                // Redirecionar para a página de pagamento
+                window.location.href = 'pagamento.html';
             });
-        </script>
-    </body>
+        });
+    </script>
+</body>
 </html>

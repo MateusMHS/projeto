@@ -507,7 +507,7 @@ img {
     font-size:2em;
 }
 
-#admin {
+#login-form {
     padding: 150px 0;
     /* Centraliza verticalmente */
     text-align: center;
@@ -515,7 +515,7 @@ img {
     margin-bottom:0.3em;
 }
 
-#admin-senha, #admin-login {
+#username, #password {
     border-color: black;
     /* Define a cor da borda dos campos de cliente */
     border-width: 1px;

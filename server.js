@@ -5,14 +5,18 @@ const cors = require('cors');
 
 const app = express();
 app.use(bodyParser.json());
-app.use(cors());
+app.use(cors({
+    origin: '*', // Permitir solicitações de qualquer origem
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    allowedHeaders: ['Content-Type', 'Authorization']
+}));
 
 // Configuração do banco de dados MySQL
 const db = mysql.createConnection({
     host: 'localhost',
-    user: 'seu_usuario',
-    password: 'sua_senha',
-    database: 'seu_banco_de_dados'
+    user: 'root',
+    password: '',
+    database: 'mcdonalds'
 });
 
 db.connect((err) => {
@@ -22,17 +26,41 @@ db.connect((err) => {
     console.log('Conectado ao MySQL');
 });
 
-// Rota para inserir itens selecionados
-app.post('/addItems', (req, res) => {
-    let items = req.body.items;
-    let totalPreco = req.body.totalPreco;
-    let sql = 'INSERT INTO pedidos (items, totalPreco) VALUES (?, ?)';
-    db.query(sql, [JSON.stringify(items), totalPreco], (err, result) => {
+// Rota para inserir pedidos
+app.post('/addPedido', (req, res) => {
+    let { items, totalPreco, formaPagamento, nome, cpf } = req.body;
+    let sql = 'INSERT INTO pedidos (items, totalPreco, formaPagamento, nome, cpf) VALUES (?, ?, ?, ?, ?)';
+    db.query(sql, [JSON.stringify(items), totalPreco, formaPagamento, nome, cpf], (err, result) => {
         if (err) throw err;
         res.send('Pedido adicionado');
     });
 });
 
-app.listen(3000, () => {
-    console.log('Servidor rodando na porta 3000');
+// Rota para autenticar login do administrador 
+app.post('/login', (req, res) => 
+    { const { username, password } = req.body; let sql = 'SELECT * FROM admin WHERE username = ? AND password = ?'; 
+db.query(sql, [username, password], 
+    (err, results) => { if (err) throw err; if (results.length > 0) { res.json({ success: true }); } else { res.json({ success: false, message: 'Usuário ou senha incorretos' }); } }); }); 
+    
+// Rota para adicionar item 
+app.post('/addItem', (req, res) => { const { name, price, category } = req.body; let sql = 'INSERT INTO itens (name, price, category) VALUES (?, ?, ?)'; 
+db.query(sql, [name, price, category], (err, result) => { if (err) throw err; res.send('Item adicionado'); }); }); 
+
+// Rota para remover item 
+app.delete('/removeItem/:id', (req, res) => { const id = req.params.id; 
+    let sql = 'DELETE FROM itens WHERE id = ?'; 
+    db.query(sql, [id], (err, result) => { if (err) throw err; res.send('Item removido'); }); }); 
+    
+// Rota para atualizar item 
+app.put('/updateItem/:id', (req, res) => { const id = req.params.id; const { name, price, category } = req.body; 
+let sql = 'UPDATE itens SET name = ?, price = ?, category = ? WHERE id = ?'; db.query(sql, [name, price, category, id], 
+    (err, result) => { if (err) throw err; res.send('Item atualizado'); }); });
+
+// Testar Conexão
+app.get('/', (req, res) => {
+    res.send('Servidor está funcionando!');
+});
+
+app.listen(8080, () => {
+    console.log('Servidor rodando na porta 8080');
 });

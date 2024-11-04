@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>McDonalds_COMBOS</title>
-    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -17,7 +16,7 @@
         </ul>
     </header>
 
-    <h1>Escolha seu combo:</h1>
+    <h1 id="titulo-lanches">Escolha seu combo:</h1>
     <section id="section-combos">
         <form id="formulario-combos">
             <div class="combo-item">
@@ -36,9 +35,8 @@
     </section>
 
     <footer id="footer-btn">
-        <a href="index.html" tile="pag"><input id="btn-voltar" type="button" value="VOLTAR"></a>
-        <a href="lanches.html" tile="pag"><input id="btn-proximo" type="button" value="PRÓXIMO"></a>
-        <button type="button" onclick="coletarItens('lanches.html')" id="fazer-pedido">Próximo</button>
+        <button type="button" onclick="coletarItens('lanches.html')" id="btn-proximo">Próximo</button>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

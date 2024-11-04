@@ -16,15 +16,19 @@
     <section id="titulo-entrada">
     <h1 id="administrador-title">Olá, digite seu usuário e senha para acessar para acessar o sistema.</h1>
     </section>
-    <section id="admin">
-        <form method="get" action="areaAdministrador.html" id="formulario-cliente">
-            <input id="admin-login" type="text" placeholder="Digite seu login">
-            <br>
-            <br>
-            <input id="admin-senha" type="text" placeholder="Digite a sua senha">
-            <br>
-            <input id="btn-iniciarPedido" type="submit" value="Login">
-        </form> 
-        
+    <form id="login-form"> 
+        <input type="text" id="username" placeholder="Usuário" required> 
+        <br><br>
+        <input type="password" id="password" placeholder="Senha" required> 
+        <br><br>
+        <button type="submit" style="padding:30px 50px 30px 50px;">Login</button> 
+        <br><br>
+    </form> <div id="message"></div> 
+    <script> document.getElementById('login-form').addEventListener('submit', function(event) 
+    { event.preventDefault(); const username = document.getElementById('username').value; 
+    const password = document.getElementById('password').value; fetch('http://localhost:8080/login', 
+    { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ username: username, password: password }) }) 
+    .then(response => response.json()) .then(data => { if (data.success) { window.location.href = 'admin.html'; } 
+    else { document.getElementById('message').textContent = data.message; } }); }); </script>
 </body>
 </html>
