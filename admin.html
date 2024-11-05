@@ -6,23 +6,60 @@
     <title>Painel do Administrador</title>
 </head>
 <body>
-    <h1>Painel do Administrador</h1>
+    <h1 style="text-align:center; margin-top:7em;">Painel do Administrador</h1>
     <div>
-        <h2>Adicionar Item</h2>
-        <form id="add-item-form">
-            <input type="text" id="item-name" placeholder="Nome do Item" required>
-            <input type="number" id="item-price" placeholder="Preço" required>
-            <input type="text" id="item-category" placeholder="Categoria" required>
-            <button type="submit">Adicionar</button>
+        <h2 style="text-align:center;">Adicionar Item</h2>
+        <form id="add-item-form" style="text-align: center;">
+            <input type="text" id="item-name" placeholder="Nome do Item" style="text-align: center;" required>
+            <br><br>
+            <input type="number" id="item-price" placeholder="Preço" style="text-align: center; padding:10px;" required>
+            <br><br>
+            <input type="text" id="item-category" placeholder="Categoria" style="text-align: center;" required>
+            <br><br>
+            <button type="submit" id="addBanco">Adicionar</button>
         </form>
     </div>
+    <br><br>
     <div>
-        <h2>Remover Item</h2>
+        <h2 style="text-align:center;">Remover Item</h2>
         <form id="remove-item-form">
-            <input type="number" id="item-id-remove" placeholder="ID do Item" required>
-            <button type="submit">Remover</button>
+            <br>
+            <input type="number" id="item-id-remove" placeholder="ID do Item" style="text-align: center; padding: 10px;" required>
+            <br><br>
+            <button type="submit" id="removerBanco" style="text-align: center;" >Remover</button>
         </form>
     </div>
-    <div>
-        <h2>Atualizar Item</h2>
-        <form
+
+    <script src="script.js"></script>
+
+    <script>
+
+        document.getElementById("add-item-form").onsubmit = function(event) {
+            event.preventDefault();  // Impede o envio do formulário tradicional
+
+            var nome = document.getElementById("item-name").value;
+            var preco = document.getElementById("item-price").value;
+            var categoria = document.getElementById("item-category").value;
+
+            // Enviar dados para o servidor Node.js via fetch
+            fetch('http://localhost:8080/addItem', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ name: nome, price: preco, category: categoria })  // Enviar dados como JSON
+            })
+            .then(response => response.text())  // Receber resposta como texto
+            .then(data => {
+                console.log(data);  // Exibe a resposta do servidor
+                alert(data);  // Alerta com a resposta (sucesso ou erro)
+            })
+            .catch(error => {
+                console.error('Erro:', error);
+                alert('Erro ao enviar os dados');
+            });
+        };        
+
+
+    </script>
+    </body>

@@ -745,3 +745,67 @@ img {
     margin-top:0.5em;
     margin-left:45.66%;
 }
+
+#add-item-form {
+    text-align: center;
+}
+
+#remove-item-form {
+    text-align: center;
+}
+
+#logoMectopo {
+    background-color: red;
+    border-radius: 30px;
+    width: 6vw;
+    height: 6vh;
+    margin-right:5em;
+}
+
+#addBanco {
+    border-color: rgb(0, 0, 0);
+    /* Define a cor da borda do botão */
+    border-width: 2px;
+    /* Define a largura da borda do botão */
+    border-radius: 4px;
+    /* Define o raio da borda (cantinhos arredondados) */
+    text-align: center;
+    /* Centraliza o texto dentro do botão */
+    text-decoration: none;
+    /* Remove sublinhado do texto */
+    background: none;
+    /* Remove fundo do botão */
+    font-size: 20px;
+    /* Define o tamanho da fonte */
+    color: rgb(0, 0, 0);
+    /* Define a cor do texto */
+    padding: 1.5vh;
+    /* Adiciona preenchimento vertical */
+    cursor: pointer;
+    /* Altera o cursor ao passar sobre o botão */
+    margin-top:0.5em;
+}
+
+#removerBanco {
+    border-color: rgb(0, 0, 0);
+    /* Define a cor da borda do botão */
+    border-width: 2px;
+    /* Define a largura da borda do botão */
+    border-radius: 4px;
+    /* Define o raio da borda (cantinhos arredondados) */
+    text-align: center;
+    /* Centraliza o texto dentro do botão */
+    text-decoration: none;
+    /* Remove sublinhado do texto */
+    background: none;
+    /* Remove fundo do botão */
+    font-size: 20px;
+    /* Define o tamanho da fonte */
+    color: rgb(0, 0, 0);
+    /* Define a cor do texto */
+    padding: 1.5vh;
+    /* Adiciona preenchimento vertical */
+    cursor: pointer;
+    /* Altera o cursor ao passar sobre o botão */
+    margin-top:0.5em;
+}
